@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerrittBank", "PerrittBank\PerrittBank.csproj", "{B794BB6A-B3CC-42C5-94A2-72DA72FF31A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerrittBankTest", "PerrittBankTest\PerrittBankTest.csproj", "{A7D6F7E9-CA58-43B0-AB7C-50948975BAA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B794BB6A-B3CC-42C5-94A2-72DA72FF31A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B794BB6A-B3CC-42C5-94A2-72DA72FF31A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B794BB6A-B3CC-42C5-94A2-72DA72FF31A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B794BB6A-B3CC-42C5-94A2-72DA72FF31A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D6F7E9-CA58-43B0-AB7C-50948975BAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D6F7E9-CA58-43B0-AB7C-50948975BAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D6F7E9-CA58-43B0-AB7C-50948975BAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D6F7E9-CA58-43B0-AB7C-50948975BAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0235676D-4502-4F74-BB96-BE3A351E9A2F}
+	EndGlobalSection
+EndGlobal
