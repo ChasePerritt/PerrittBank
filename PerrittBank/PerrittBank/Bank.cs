@@ -1,5 +1,9 @@
 ﻿using System;
 
+/* Name: Chase Perritt
+ * Date: 13 April 2020
+ * Description: This is the Bank.cs file containing the class information for the BankAccount class library
+ */
 namespace BankAccountNS
 {
     /// <summary>  
@@ -33,6 +37,9 @@ namespace BankAccountNS
             get { return m_balance; }
         }
 
+        // class under test  
+        public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
+        public const string DebitAmountLessThanZeroMessage = "Debit amount less than zero";
         public void Debit(double amount)
         {
             if (m_frozen)
@@ -42,17 +49,19 @@ namespace BankAccountNS
 
             if (amount > m_balance)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
             }
 
             if (amount < 0)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
             }
 
             m_balance -= amount; // Changed += to -= to fit the expected value
         }
 
+        // class under test
+        public const string CreditAmountLessThanZeroMessage = "Credit amount less than zero";
         public void Credit(double amount)
         {
             if (m_frozen)
@@ -62,7 +71,7 @@ namespace BankAccountNS
 
             if (amount < 0)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException("amount", amount, CreditAmountLessThanZeroMessage);
             }
 
             m_balance += amount;
